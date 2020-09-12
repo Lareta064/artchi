@@ -1,0 +1,113 @@
+.profile {
+	padding-top: 140px;
+	padding-bottom: 140px;
+}
+
+.profile-content {
+	display: flex;
+	justify-content: space-between;
+
+	@media(max-width: 1199px) {
+		flex-direction: column;
+	}
+
+
+	.title-block {
+		width: 24%;
+		max-width: 480px;
+
+		@media(max-width: 1199px) {
+			width: 100%;
+			margin-bottom: 80px;
+		}
+
+		@media(max-width: 767px) {
+			width: 100%;
+			margin-bottom: 40px;
+		}
+	}
+
+	.profile-lines {
+		display: flex;
+		justify-content: space-between;
+		width: 65%;
+		max-width: 1230px;
+
+		@media(max-width: 1199px) {
+			width: 100%;
+
+		}
+
+		@media(max-width: 767px) {
+			width: 100%;
+			flex-direction: column;
+		}
+	}
+
+	.profile-card {
+		width: 32%;
+		max-width: 260px;
+
+		@media(max-width: 1199px) {
+
+			margin-bottom: 60px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		@media(max-width: 767px) {
+			width: 100%;
+		}
+
+	}
+
+	.profile-link {
+		position: relative;
+		color: #000;
+
+		&:hover {
+
+			color: @red;
+
+		}
+
+		.link-ic {
+			position: absolute;
+			left: 0;
+			bottom: -20px;
+
+		}
+
+	}
+}
+
+.profile-card {
+	position: relative;
+	display: block;
+
+	p {
+		color: #000;
+
+		@media(max-width:1364px) {
+			font-size: 16px;
+		}
+
+		@media(max-width:767px) {
+			font-size: 18px;
+		}
+
+		@media(min-width:768px) and (max-width: 1199px) {
+			height: 90px;
+		}
+
+	}
+
+	.profile-icon {
+		margin-bottom: 29px;
+		height: 100px;
+	}
+
+	.profile-text {
+		margin-bottom: 43px;
+	}
+}
