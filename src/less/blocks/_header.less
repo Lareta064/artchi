@@ -5,9 +5,15 @@
 	left: 0;
 	right: 0;
 	padding-bottom: 20px;
+	z-index: 10;
 
 	.logo {
 		margin-right: 58px;
+	}
+
+	@media(max-width:767px) {
+		height: 97px;
+		padding-top: 5px;
 	}
 }
 
@@ -18,6 +24,12 @@
 	border: 2px solid #EB2325;
 	font-weight: 700;
 	margin-left: auto;
+	color: #000;
+
+	&:hover {
+		border: 2px solid #000;
+		color: @red;
+	}
 }
 
 .header-top-content {
@@ -191,6 +203,7 @@
 	-webkit-transition: .3s;
 	-o-transition: .3s;
 	transition: .3s;
+
 }
 
 .menu-toggle span:after {
@@ -211,6 +224,10 @@
 	-ms-transform: rotate(45deg);
 	transform: rotate(45deg);
 	background-color: @red;
+
+	@media(max-width:345px) {
+		background-color: #fff;
+	}
 }
 
 .menu-toggle.active span:before {
@@ -219,4 +236,8 @@
 	-ms-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 	background-color: @red;
+
+	@media(max-width:345px) {
+		background-color: #fff;
+	}
 }

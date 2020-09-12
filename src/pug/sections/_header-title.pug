@@ -1,5 +1,5 @@
 header.header
-	.hidden-layout
+	//- .hidden-layout
 	.container
 		.header-content
 			.header-left
@@ -13,7 +13,9 @@ header.header
 							input(type="submit" value="Подписаться")
 			.header-right
 				.header-img
-					img(src="img/header@2x.png",srcset="img/header@2x.png 2x", width="900" alt="img")
+					.vert-line-red
+					.vert-line-black
+					img(src="img/header@1x.png",srcset="img/header@2x.png 2x", width="900" alt="img")
 		.header-bottom
 			a(href="mailto: hello@artchi.pro").bold-text.hover-border hello@artchi.pro
 			nav.social-block
