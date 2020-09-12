@@ -1,0 +1,30 @@
+header.header
+	.hidden-layout
+	.container
+		.header-content
+			.header-left
+				h1 Добро пожаловать <br> на сайт проекта<br> #[span.red-text ARTCHI]
+				form.form-subscribe
+					p.bold-text Подписывайтесь на новости
+					.form-block
+						.form-item
+							input(type="text" name="email" placeholder="Ваш e-mail")
+						.form-btn
+							input(type="submit" value="Подписаться")
+			.header-right
+				.header-img
+					img(src="img/header@2x.png",srcset="img/header@2x.png 2x", width="900" alt="img")
+		.header-bottom
+			a(href="mailto: hello@artchi.pro").bold-text.hover-border hello@artchi.pro
+			nav.social-block
+				a(href="#!").social-item
+					i.fas.fa-comments
+				a(href="#!").social-item
+					i.fab.fa-facebook-square
+				a(href="#!").social-item
+					i.fab.fa-twitter
+				a(href="#!").social-item
+					i.fab.fa-youtube
+				a(href="#!").social-item
+					i.fab.fa-instagram
+				
